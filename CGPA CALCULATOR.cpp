@@ -242,7 +242,7 @@ tuple<float,float,float,float> sem6()
     cout<<"\nEnter Grade for \" ETHICS AND AI \": ";
     cin>>eai;
     
-    map<string,int> credits = { {"dev",3},{"devlab",2},{"ann",3},{"ee6",2},{"annlab",2},{"cep4",1},{"dpm",3},{"rl",3},{"eai",3} };
+    map<string,int> credits = { {"dev",3},{"devlab",1},{"ann",3},{"ee6",2},{"annlab",2},{"cep4",1},{"dpm",3},{"rl",3},{"eai",3} };
     map<string,string> grade = { {"dev",dev},{"devlab",devlab},{"ann",ann},{"ee6",ee6},{"annlab",annlab},{"cep4",cep4},{"dpm",dpm},{"rl",rl},{"eai",eai} };
     return calci(credits,grade);    
     
