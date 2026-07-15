@@ -248,11 +248,45 @@ tuple<float,float,float,float> sem6()
     
     
 }
+tuple<float,float,float,float> sem7()
+{
+    string pp1, pmpe,ipr,genai,spm;
+    cout<<"\nEnter Grade for \" PROJECT PHASE 1 \": ";
+    cin>>pp1;
+    cout<<"\nEnter Grade for \" PRINCIPLES OF MANAGEMENT AND PROFESSIONAL ETHICS \": ";
+    cin>>pmpe;
+    cout<<"\nEnter Grade for \" INTELLECTUAL PROPERTY RIGHTS \": ";
+    cin>>ipr;  
+    cout<<"\nEnter Grade for \" GENERATIVE AI AND PROMPT ENGINEERING \": ";
+    cin>>genai;  
+    cout<<"\nEnter Grade for \" SOFTWARE PROJECT MANAGEMENT \": ";
+    cin>>spm;  
 
+    map<string,int> credits = { {"pp1",2},{"pmpe",3},{"ipr",3},{"genai",3},{"spm",3} };
+    map<string,string> grade = { {"pp1",pp1},{"pmpe",pmpe},{"ipr",ipr},{"genai",genai},{"spm",spm} };
+    return calci(credits,grade);    
+    
+    
+}
+tuple<float,float,float,float> sem8()
+{
+    string fp, tsa;
+    cout<<"\nEnter Grade for \" FINAL PHASE PROJECT \": ";
+    cin>>fp;
+    cout<<"\nEnter Grade for \" TEXT AND SPEECH ANALYSIS \": ";
+    cin>>tsa;
+    
+
+    map<string,int> credits = { {"fp",6},{"tsa",3} };
+    map<string,string> grade = { {"fp", fp},{"tsa", tsa}};
+    return calci(credits,grade);    
+    
+    
+}
 int main()
 {
     cout<<" __________________________ WELCOME To FINAL YEAR AIML STUDENT CGPA CALCULATOR Of SIET ___________________________\n\n\n";
-    cout<<"Upto Sem6 is updated in the server\n";
+    cout<<"All Semester is updated in the server.\n";
     
     cout<<"Note Only Grades are allowed for each input\n Example(Values Allowed): O, A+, A ,B, B+, C, U\n\n\n";
     cout<<"Instructions :\n\t1.Kindly Enter the Correct Grades Where the Subject order is changing for Sem3 !!!\n";
@@ -316,13 +350,27 @@ int main()
     gradeearned=get<3>(result6);
     display(totalcreditsearned,totalcredit,totalgrademarks,gradeearned);
     
+    cout<<"\n\n _______________________________  Semester-VII   ___________________________________\n\n";
+    
+    auto result7 = sem7();
+    totalcreditsearned = get<0>(result7);
+    totalcredit =get<1>(result7);
+    totalgrademarks =get<2>(result7);
+    gradeearned=get<3>(result7);
+    display(totalcreditsearned,totalcredit,totalgrademarks,gradeearned);
+
+    cout<<"\n\n _______________________________  Semester-VIII   ___________________________________\n\n";
+    
+    auto result8 = sem8();
+    totalcreditsearned = get<0>(result8);
+    totalcredit =get<1>(result8);
+    totalgrademarks =get<2>(result8);
+    gradeearned=get<3>(result8);
+    display(totalcreditsearned,totalcredit,totalgrademarks,gradeearned);
     
     cout<<"\n\n\n  ________  THANK YOU FOR BEING A VALUABLE STUDENT IN OUR COLLEGE__________\n\n\n";
-    
-    cout<<"_______________________________________________________________Developed by  Your Friend!!!!";
-    
-    
-    
+    cout<<"\n\n\n  ________  :-) SEMESTER OVER GOOD BYE WITH SWEET MEMORIES (-: _______\n\n\n";
+    cout<<"_______________________________________________________________Developed by  Your Friend Deepak!!!!";
     
     return 0;
 }    
