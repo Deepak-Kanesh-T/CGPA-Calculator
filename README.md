@@ -6,12 +6,12 @@
 
 ## ✨ Features
 
-- **SGPA & CGPA calculation** up to Semester 6
-- **Predefined static subject list** for each semester (AIML department specific)
+- **SGPA & CGPA calculation** up to Semester 8
+- **Predefined static subject list** for each semester (AIML department specific) 2022 - 2026 Batch 
 - **Standard 10-point grading scale** (`O`, `A+`, `A`, `B+`, `B`, `C`, `U`)
 - **Arrears handled** (`U` for uncleared subjects)
 - **Detailed console prompts** for each subject
-- **Cumulative GPA tracking** across all 6 semesters
+- **Cumulative GPA tracking** across all 8 semesters
 
 ---
 
@@ -76,7 +76,6 @@ Sri Shakthi Institute of Engineering and Technology
 
 ## 💡 Future Improvements
 
-- Add support for semesters 7 & 8
 - Add file input/output or result saving
 - Convert to GUI or Web-based interface (Qt, React, Flask)
 
@@ -107,13 +106,17 @@ Enter Grade for " DIGITAL PRINCIPLES AND SYSTEM DESIGN LABORATORY ": A+
  ______________________ RESULTS OF Semester- 1 _____________________
 
 ...
- ********** Current CGPA :  8.34
+ 
 
- ______________________ RESULTS OF Semester- 6 _____________________
+ _________________________  Semester-VIII   _________________________________
+
+ ********** Current CGPA :  8.31
+
+ ______________________ RESULTS OF Semester- 8 _____________________
 
   ________  THANK YOU FOR BEING A VALUABLE STUDENT IN OUR COLLEGE__________
 
-_______________________________________________________________Developed by  Your Friend!!!!
+_______________________________________________________________Developed by  Your Friend Deepak!!!!
 ```
 </details>
 
